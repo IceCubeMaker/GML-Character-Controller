@@ -1,2 +1,0 @@
-charcon_attach();
-
