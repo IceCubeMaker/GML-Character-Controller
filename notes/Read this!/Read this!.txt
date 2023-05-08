@@ -1,0 +1,22 @@
+Charcon is an addon, made to make controlling the player character easy.
+It include the input 5 library from juju adams. 
+And some other useful scripts I have created myself
+The input 5 documentation is here:
+https://www.jujuadams.com/Input/#/6.0/
+
+Right now Charcon only includes top down 2D movement.
+But future versions might include more types of player movement.
+
+How to use
+
+in the object that you want to use as your player avatar, 
+put "charcon_attach()" and you're good to go;
+
+it works right out of the gate with controller thanks to input 5;
+on PC the controls are WASD or arrow keys + space bar for dashing
+
+You will also find a folder called floors. You can use these as parent objects. 
+If the player is on top of a floor it changes the behaviour
+
+in the scripts folder you will find all charcon specific scripts
+
