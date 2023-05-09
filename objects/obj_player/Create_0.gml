@@ -1,2 +1,2 @@
 charcon_attach();
-charcon_set_mode("platformer");
+charcon_set_mode("top down");

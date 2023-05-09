@@ -40,7 +40,7 @@ if movement_mode = "top_down" {
 	        }
 	    } else if spd > 0 {
 			if is_on_ice {
-				spd -= 0.03
+				spd -= 0.03*DELTA_TIME
 			} else {
 				spd -= 0.3*DELTA_TIME;
 			}
@@ -97,7 +97,7 @@ if movement_mode = "top_down" {
 }
 
 if movement_mode = "platformer" {
-	collision = move(270, y_spd);
+	collision = move("down", y_spd);
 	
 	y_spd += 0.025*player_gravity
 	if y_spd > player_gravity y_spd = player_gravity;
@@ -105,17 +105,17 @@ if movement_mode = "platformer" {
 	if input_check("right") {
 		spd += acceleration*DELTA_TIME;
 		if spd > max_spd spd = max_spd;
-	}
-	if input_check("left") {
+	} else if input_check("left") {
 		spd -= acceleration*DELTA_TIME;
-		if spd > max_spd spd = max_spd;
+		if spd < -max_spd spd = -max_spd;
+	} else {
+		if spd > 0.1 spd -= 0.3*DELTA_TIME;
+		if spd < -0.1 spd += 0.3*DELTA_TIME;
+		if spd > -0.1 and spd < 0.1 spd = 0;
 	}
-	if input_check_pressed("up") and y_spd > 0 {
+	if input_check_pressed("up") and y_spd > 0 and collision = "y" {
 		y_spd = -jump_strength;
 		if spd > max_spd spd = max_spd;
 	}
-	move(0, spd);
-	if spd > 0 spd -= 0.4*DELTA_TIME;
-	if spd < 0 spd += 0.4*DELTA_TIME;
-	
+	move("right", spd);
 }
