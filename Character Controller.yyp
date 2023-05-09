@@ -240,6 +240,7 @@
     {"id":{"name":"__input_class_trigger_effect_off","path":"scripts/__input_class_trigger_effect_off/__input_class_trigger_effect_off.yy",},},
     {"id":{"name":"input_y","path":"scripts/input_y/input_y.yy",},},
     {"id":{"name":"input_mouse_dx","path":"scripts/input_mouse_dx/input_mouse_dx.yy",},},
+    {"id":{"name":"scr_charcon_set_gravity","path":"scripts/scr_charcon_set_gravity/scr_charcon_set_gravity.yy",},},
     {"id":{"name":"input_check","path":"scripts/input_check/input_check.yy",},},
     {"id":{"name":"__input_key_get_name","path":"scripts/__input_key_get_name/__input_key_get_name.yy",},},
     {"id":{"name":"input_profile_export","path":"scripts/input_profile_export/input_profile_export.yy",},},

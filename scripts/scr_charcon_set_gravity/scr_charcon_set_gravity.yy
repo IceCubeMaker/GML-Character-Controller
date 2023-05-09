@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_charcon_attach",
+  "name": "scr_charcon_set_gravity",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
