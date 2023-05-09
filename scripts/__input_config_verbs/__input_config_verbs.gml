@@ -28,7 +28,7 @@ return {
         
 		consume: input_binding_mouse_button(mb_left),
         pause: input_binding_key("P"),
-		dash: input_binding_mouse_button(vk_space),
+		dash: input_binding_key(ord("J")),
 		swap_character: input_binding_key("E"),
 		drop_item: input_binding_key("R"),
     },

@@ -22,3 +22,9 @@ acceleration = 0.5
 dash_timeout = 10;
 
 controlling_object = -1;
+
+movement_mode = "top down"
+
+player_gravity = 9.81
+y_spd = 0;
+jump_strength = 4;

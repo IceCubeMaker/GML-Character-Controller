@@ -53,10 +53,10 @@ function move(direction, speed)
         {
         // Move the player slightly in the opposite direction of their movement
         // until a non-colliding position is found.
-        new_x -= sign(move_x);
+        new_x += sign(move_x);
 		i++;
         }
-		move_x = new_x - x;
+		move_x = 0
 		}
 		
 	    if (!place_free(x, y + move_y))
@@ -74,12 +74,12 @@ function move(direction, speed)
         {
         // Move the player slightly in the opposite direction of their movement
         // until a non-colliding position is found.
-        new_y -= sign(move_y);
+        new_y += sign(move_y);
 		i++;
         }
 
         // Calculate the new movement values based on the adjusted position.
-		move_y = new_y - y;
+		move_y = 0
         }
 		
     // Update the player's x and y position by adding the movement values.

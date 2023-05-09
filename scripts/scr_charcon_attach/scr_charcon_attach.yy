@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "scripts -- use these in the player object",
-    "path": "folders/Character Controller/scripts -- use these in the player object.yy",
+    "name": "Library",
+    "path": "folders/Character Controller/Library.yy",
   },
 }
